@@ -1,0 +1,148 @@
+:root {
+    --color-orange: orange;
+}
+
+@media (max-width: 660px) {
+    :root {
+        --color-orange: orangered;
+    }
+    .logo {
+        display: none;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+#page-wraper {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 5em;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+}
+
+.logo {
+    width: 60vw;
+}
+
+#header-img {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+nav ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+}
+
+#form-section {
+    margin-top: 5em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-top: 1em;
+}
+
+#email {
+    width: 17%;
+    height: 30px;
+}
+
+#submit {
+    width: 8%;
+    height: 30px;
+    border-radius: 3px;
+    background-color: var(--color-orange, orange);
+    border: 0 solid;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#content-div {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content-div section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.icon {
+    font-size: 3em;
+    color: var(--color-orange, orange);
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+#Works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#Works iframe {
+    max-width: 560px;
+    width: 100%;
+    height: 315px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    margin-top: 40px;
+    width: 60%;
+    background-color: #ddd;
+    padding: 20px;
+}
